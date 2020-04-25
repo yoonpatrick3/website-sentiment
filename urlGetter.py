@@ -22,7 +22,7 @@ def extractUrl():
 	html = response.read()
 
 
-	soup = BeautifulSoup(html,'html5lib')
+	soup = BeautifulSoup(html,'lxml')
 	
 	# kill all script and style elements
 	for script in soup(["script", "style"]):
